@@ -3,29 +3,25 @@ import {HttpClient} from 'aurelia-fetch-client';
 import 'fetch';
 
 @inject(HttpClient)
-export class NowPlaying {
+export class PopularMovies {
   heading = 'Popular Movies';
-  movies = [];
+  popularMovies = [];
 
   constructor(http) {
     http.configure(config => {
       config
-        .withBaseUrl('https://api.themoviedb.org/3/movie/now_playing?api_key=8138f629c34a57fd17ae183b7eb41931')
-        .withDefaults({
-            credentials: 'same-origin',
-            headers: {
-                'Accept': 'application/json',
-                'Access-Control-Allow-Origin': *
-            }
-        })
+        .useStandardConfiguration()
+        .withBaseUrl('http://api.themoviedb.org/3/movie/now_playing?api_key=8138f629c34a57fd17ae183b7eb41931');
     });
 
     this.http = http;
   }
 
   activate() {
-    return this.http.fetch('movies')
+    return this.http.fetch('')
       .then(response => response.json())
-      .then(movies => this.movies = movies);
+      // .then(listOfMovies => console.log(listOfMovies.results))
+      .then(listofMovies => listofMovies.results = popularMovies)
+
   }
 }
