@@ -8,7 +8,7 @@
         <div class="card">
           <canvas class="header-bg" width="250" height="70" blur-image.bind="image"></canvas>
           <div class="avatar">
-            <img src.bind="movies.poster_path" crossorigin ref="image"/>
+            <img src.bind="'http://image.tmdb.org/t/p/w342/' + movies.poster_path" crossorigin ref="image"/>
           </div>
           <div class="content">
             <p class="name">${movies.title}</p>
