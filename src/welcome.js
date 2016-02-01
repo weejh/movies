@@ -1,5 +1,5 @@
 //import {computedFrom} from 'aurelia-framework';
-
+import {loginStat} from 'login-status'
 export class Welcome {
   heading = 'Welcome to the Aurelia Navigation App!';
   firstName = 'John';
@@ -20,11 +20,24 @@ export class Welcome {
     alert(`Welcome, ${this.fullName}!`);
   }
 
+  activate() {
+    // console.log('welcome =>  ' + loginStat());
+    this.isAuthenticated = loginStat()
+    // if (loginStat()) this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
+    loginStat() ? this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
+      : this.username = 'Lim KoPi'
+
+  }
+
+
   canDeactivate() {
+
     if (this.fullName !== this.previousValue) {
       return confirm('Are you sure you want to leave?');
     }
   }
+
+
 }
 
 export class UpperValueConverter {
