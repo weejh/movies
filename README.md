@@ -1,3 +1,12 @@
+# Image Sizes
+* w92
+* w154
+* w185
+* w342
+* w500
+* w780
+* original
+
 # aurelia-skeleton-navigation
 
 [![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)
