@@ -29,4 +29,10 @@ export class Login {
       });
     }
   }
+
+  activate() {
+    setInterval(this.upDate = () => {
+      this.daTe = new Date()
+    }, 500)
+  }
 }

@@ -83,5 +83,8 @@
         "main": "client/shim.min"
       }
     }
+  },
+  "dependencies": {
+    "material-design-lite": "^1.0.6"
   }
 }
