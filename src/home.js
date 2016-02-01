@@ -21,7 +21,7 @@ export class PopularMovies {
     return this.http.fetch('')
       .then(response => response.json())
       // .then(listOfMovies => console.log(listOfMovies.results))
-      .then(listofMovies => listofMovies.results = popularMovies)
+      .then(listofMovies => this.popularMovies = listofMovies.results)
 
   }
 }
