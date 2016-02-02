@@ -10,7 +10,7 @@
 # Cool Stuff
 1. Event delegation - don't need event listeners all over the place
 1. Decorators
-1. 
+1. ES7 - class properties and class instance fields
 
 # aurelia-skeleton-navigation
 
