@@ -1,29 +1,35 @@
 <template>
+  <require from="blur-image"></require>
+
   <section class="au-animate">
-    <h2>${heading}</h2>
-    <form role="form" submit.delegate="submit()">
-      <div class="form-group">
-        <label for="fn">First Name</label>
-        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name">
-      </div>
-      <div class="form-group">
-        <label for="ln">Last Name</label>
-        <input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
-      </div>
-      <div class="form-group">
-        <label>Full Name</label>
-        <p class="help-block">${fullName | upper}</p>
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+    <!-- <h2>${heading}</h2> -->
+    <!-- <h2>Who am I ...</h2> -->
+    <div class="row au-stagger">
+      <!-- <h2>Who am I ...</h2> -->
 
+      <div class="col-sm-6 col-md-3 card-container au-animate">
+        <div class="card">
+          <canvas class="header-bg" width="250" height="70"></canvas>
+          <div class="avatar">
+            <!-- <img src.bind="user.avatar_url" crossorigin ref="image"/> -->
+            <img src=${picture} alt="" />
 
-    </form>
+          </div>
+          <div class="content">
+            <p class="name">${username}</p>
+            <!-- <p>login time: ${time} </p> -->
+            <!-- <p><a target="_blank" class="btn btn-default" href.bind="user.html_url">Contact</a></p> -->
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <hr>
+
+  <!-- <hr>
   <p> user: ${username} </p>
   <p>
     login time: ${time}
   </p>
-  <img src=${picture} alt="" />
+  <img src=${picture} alt="" /> -->
 
 </template>
