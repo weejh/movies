@@ -78,19 +78,6 @@ div.au-stagger {
   animation: fadeIn 2s;
 }
 
-.card {
-  overflow: hidden;
-  position: relative;
-  border: 1px solid #CCC;
-  border-radius: 8px;
-  text-align: center;
-  padding: 0;
-  background-color: #337ab7;
-  color: rgb(136, 172, 217);
-  margin-bottom: 32px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-}
-
 .card .content {
   margin-top: 10px;
 }
@@ -154,6 +141,24 @@ div.au-stagger {
     -ms-transform: none;
     transform: none
   }
+}
+
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+p.name {
+  margin-top: 8px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @-webkit-keyframes fadeIn {

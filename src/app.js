@@ -37,7 +37,12 @@ export class App {
         name: 'popular-movies',
         moduleId: 'popular-movies',
         nav: true,
-        title: 'Popular Movies'}
+        title: 'Popular Movies'},
+      { route: 'movies',
+        name: 'movies',
+        moduleId: 'movies',
+        nav: true,
+        title: 'Movies'}
     ]);
     this.router = router;
   }
