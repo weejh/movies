@@ -21,6 +21,7 @@ System.config({
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.0.1",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.0-beta.1.0.2",
     "aurelia-logging-console": "npm:aurelia-logging-console@1.0.0-beta.1",
+    "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.1.2",
     "aurelia-router": "npm:aurelia-router@1.0.0-beta.1.0.1",
     "aurelia-templating-binding": "npm:aurelia-templating-binding@1.0.0-beta.1.0.2",
     "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0-beta.1.0.4",
@@ -127,6 +128,10 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.0.2",
       "core-js": "npm:core-js@1.2.6"
     },
+    "npm:aurelia-pal-browser@1.0.0-beta.1.1.2": {
+      "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.1.1",
+      "core-js": "npm:core-js@2.0.3"
+    },
     "npm:aurelia-route-recognizer@1.0.0-beta.1": {
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1",
       "core-js": "npm:core-js@1.2.6"
@@ -183,6 +188,12 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:core-js@1.2.6": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.0"
+    },
+    "npm:core-js@2.0.3": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
