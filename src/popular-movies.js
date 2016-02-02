@@ -35,7 +35,7 @@ export class PopularMovies {
     http.configure(config => {
       config
         .useStandardConfiguration()
-        .withBaseUrl('http://api.themoviedb.org/3/movie/now_playing?api_key=8138f629c34a57fd17ae183b7eb41931');
+        .withBaseUrl('https://api.themoviedb.org/3/movie/now_playing?api_key=8138f629c34a57fd17ae183b7eb41931');
     });
 
     this.http = http;
@@ -53,14 +53,14 @@ export class PopularMovies {
 
   playMovie(id) {
     console.log(id)
-    var videoString = `http://api.themoviedb.org/3/movie/${id}/videos?api_key=8138f629c34a57fd17ae183b7eb41931`
+    var videoString = `https://api.themoviedb.org/3/movie/${id}/videos?api_key=8138f629c34a57fd17ae183b7eb41931`
     console.log(videoString)
 
     let httpClient = new HttpClient();
     return httpClient.fetch(videoString)
       .then(response => response.json())
       .then(({ results: [{ key }] }) => {
-        console.log('yeah!', key)
+        console.log(key)
         this.videoPath = key
         this.playVideo(key)
       })
