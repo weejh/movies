@@ -91,6 +91,8 @@
     "material-design-lite": "^1.0.6",
     "run-sequence": "^1.0.2",
     "browser-sync": "^2.10.0",
+    "karma": "^0.13.15",
+    "karma-babel-preprocessor": "^5.2.1",
     "vinyl-paths": "^1.0.0",
     "require-dir": "^0.1.0"
   }
