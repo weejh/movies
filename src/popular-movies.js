@@ -35,7 +35,7 @@ export class PopularMovies {
     http.configure(config => {
       config
         .useStandardConfiguration()
-        .withBaseUrl('http://api.themoviedb.org/3/movie/now_playing?api_key=8138f629c34a57fd17ae183b7eb41931');
+        .withBaseUrl('https://api.themoviedb.org/3/movie/now_playing?api_key=8138f629c34a57fd17ae183b7eb41931');
     });
 
     this.http = http;
