@@ -28,11 +28,6 @@ export class App {
       //   moduleId: 'whoami',
       //   nav: true,
       //   title: 'whoami' },
-      { route: 'logout',
-        name: 'logout',
-        moduleId: 'logout',
-        nav: true,
-        title: 'logout' },
       { route: 'popular-movies',
         name: 'popular-movies',
         moduleId: 'popular-movies',
@@ -42,7 +37,12 @@ export class App {
         name: 'movies',
         moduleId: 'movies',
         nav: true,
-        title: 'Movies'}
+        title: 'Movies'},
+      { route: 'logout',
+        name: 'logout',
+        moduleId: 'logout',
+        nav: true,
+        title: 'Logout' }
     ]);
     this.router = router;
   }
