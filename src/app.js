@@ -4,25 +4,25 @@ import {loginStat} from 'login-status'
 export class App {
   configureRouter(config, router) {
     // config.addPipelineStep('authorize', AuthorizeStep);
-    config.title = 'Aurelia';
+    config.title = 'Movie Diary';
     config.map([
-      { route: ['', 'welcome'],
-        name: 'welcome',
-        moduleId: 'welcome',
+      { route: ['', 'home'],
+        name: 'home',
+        moduleId: 'home',
         nav: true,
-        title: 'Welcome' },
-      { route: 'users',
-        name: 'users',
-        moduleId: 'users',
-        auth: true,
-        nav: true,
-        title: 'Github Users' },
-      { route: 'child-router',
-        name: 'child-router',
-        moduleId: 'child-router',
-        nav: true,
-        auth: true,
-        title: 'Child Router' },
+        title: 'Home' },
+      // { route: 'users',
+      //   name: 'users',
+      //   moduleId: 'users',
+      //   auth: true,
+      //   nav: true,
+      //   title: 'Github Users' },
+      // { route: 'child-router',
+      //   name: 'child-router',
+      //   moduleId: 'child-router',
+      //   nav: true,
+      //   auth: true,
+      //   title: 'Child Router' },
       // { route: 'whoami',
       //   name: 'whoami',
       //   moduleId: 'whoami',
@@ -43,7 +43,7 @@ export class App {
         name: 'logout',
         moduleId: 'logout',
         nav: true,
-        title: 'logout' }
+        title: 'Logout' }
     ]);
     this.router = router;
   }

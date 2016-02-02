@@ -47,9 +47,6 @@ export class PopularMovies {
       .then(listofMovies => this.popularMovies = listofMovies.results)
   }
 
-  playVideo (key) {
-
-  }
 
   playMovie(id) {
     console.log(id)
@@ -61,8 +58,8 @@ export class PopularMovies {
       .then(response => response.json())
       .then(({ results: [{ key }] }) => {
         console.log(key)
-        this.videoPath = key
-        this.playVideo(key)
+        this.videoPath = `https://www.youtube.com/watch?v=${key}`
+        console.log(this.videoPath)
       })
 
       // .then(details => {

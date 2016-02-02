@@ -129,6 +129,18 @@ p.name {
   justify-content: center;
 }
 
+#profile-picture {
+  height: 400px;
+  width: 400px;
+  border-radius: 50px
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px
+}
 /* animation definitions */
 @-webkit-keyframes fadeInRight {
   0% {
