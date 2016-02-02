@@ -45,7 +45,6 @@
     "karma-jasmine": "^0.3.5",
     "karma-jspm": "2.0.1-beta.2",
     "object.assign": "^1.0.3",
-    "vinyl-paths": "^1.0.0",
     "yargs": "^2.1.1"
   },
   "jspm": {
@@ -91,6 +90,7 @@
     "material-design-lite": "^1.0.6",
     "run-sequence": "^1.0.2",
     "browser-sync": "^2.10.0",
+    "vinyl-paths": "^1.0.0",
     "require-dir": "^0.1.0"
   }
 }
