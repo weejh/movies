@@ -69,24 +69,24 @@ div.au-stagger {
   animation-delay: 50ms;
 }
 
-.card-container.au-enter {
+/*.card-container.au-enter {
   opacity: 0 !important;
-}
+}*/
 
 .card-container.au-enter-active {
   -webkit-animation: fadeIn 2s;
   animation: fadeIn 2s;
 }
 
-.card .content {
+/*.card .content {
   margin-top: 10px;
-}
+}*/
 
-.card .content .name {
+/*.card .content .name {
   color: white;
   text-shadow: 0 0 6px rgba(0, 0, 0, .5);
   font-size: 18px;
-}
+}*/
 
 .card .header-bg {
   /* This stretches the canvas across the entire hero unit */
@@ -99,19 +99,33 @@ div.au-stagger {
   border-radius: 6px 6px 0 0;
 }
 
-.card .avatar {
+/*.card .avatar {
   position: relative;
   margin-top: 15px;
   z-index: 100;
+}*/
+
+.avatar img {
+  width: 200px;
+  height: 300px;
+  border: 2px #FFF solid;
 }
 
-.card .avatar img {
-  width: 100px;
-  height: 100px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 2px #FFF solid;
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+p.name {
+  margin-top: 8px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* animation definitions */
@@ -141,24 +155,6 @@ div.au-stagger {
     -ms-transform: none;
     transform: none
   }
-}
-
-
-.card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-p.name {
-  margin-top: 8px;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 @-webkit-keyframes fadeIn {

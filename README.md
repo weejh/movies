@@ -7,6 +7,11 @@
 * w780
 * original
 
+# Cool Stuff
+1. Event delegation - don't need event listeners all over the place
+1. Decorators
+1. 
+
 # aurelia-skeleton-navigation
 
 [![ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.io)

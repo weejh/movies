@@ -22,11 +22,11 @@ export class App {
         moduleId: 'popular-movies',
         nav: true,
         title: 'Popular Movies'},
-      { route: 'movies',
-        name: 'movies',
-        moduleId: 'movies',
+      { route: 'watchlist',
+        name: 'watchlist',
+        moduleId: 'watchlist',
         nav: true,
-        title: 'Movies'}
+        title: 'Watchlist'}
     ]);
 
     this.router = router;

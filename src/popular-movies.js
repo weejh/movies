@@ -20,8 +20,11 @@ export class PopularMovies {
   activate() {
     return this.http.fetch('')
       .then(response => response.json())
-      // .then(listOfMovies => console.log(listOfMovies.results))
       .then(listofMovies => this.popularMovies = listofMovies.results)
+  }
 
+  watchVideo(id) {
+    console.log(id)
+    alert(id)
   }
 }
