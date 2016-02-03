@@ -205,12 +205,14 @@ System.config({
     }
   },
   bundles: {
-    "app-build-c847b76922.js": [
+    "app-build-357f0e9474.js": [
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
       "blur-image.js",
       "child-router.html!github:systemjs/plugin-text@0.0.3.js",
       "child-router.js",
+      "home.html!github:systemjs/plugin-text@0.0.3.js",
+      "home.js",
       "login-status.js",
       "login.html!github:systemjs/plugin-text@0.0.3.js",
       "login.js",
@@ -327,6 +329,9 @@ System.config({
     ],
     "blur-image.js": [
       "npm:aurelia-framework@1.0.0-beta.1.1.1.js"
+    ],
+    "home.js": [
+      "login-status.js"
     ],
     "login.js": [
       "npm:aurelia-framework@1.0.0-beta.1.1.1.js"
