@@ -205,14 +205,21 @@ System.config({
     }
   },
   bundles: {
+<<<<<<< HEAD
     "app-build-7d867e2751.js": [
+=======
+    "app-build-c847b76922.js": [
+>>>>>>> ac4385cd5deb26a7fb5bd1018b41b4c4fb27e816
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
       "blur-image.js",
       "child-router.html!github:systemjs/plugin-text@0.0.3.js",
       "child-router.js",
+<<<<<<< HEAD
       "home.html!github:systemjs/plugin-text@0.0.3.js",
       "home.js",
+=======
+>>>>>>> ac4385cd5deb26a7fb5bd1018b41b4c4fb27e816
       "login-status.js",
       "login.html!github:systemjs/plugin-text@0.0.3.js",
       "login.js",
@@ -226,8 +233,8 @@ System.config({
       "users.js",
       "watchlist.html!github:systemjs/plugin-text@0.0.3.js",
       "watchlist.js",
-      "whoami.html!github:systemjs/plugin-text@0.0.3.js",
-      "whoami.js"
+      "welcome.html!github:systemjs/plugin-text@0.0.3.js",
+      "welcome.js",
     ],
     "aurelia-f07d9e63de.js": [
       "github:components/jquery@2.2.0.js",
@@ -327,9 +334,6 @@ System.config({
     ],
     "blur-image.js": [
       "npm:aurelia-framework@1.0.0-beta.1.1.1.js"
-    ],
-    "home.js": [
-      "login-status.js"
     ],
     "login.js": [
       "npm:aurelia-framework@1.0.0-beta.1.1.1.js"
