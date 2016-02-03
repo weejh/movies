@@ -60,6 +60,7 @@ export class PopularMovies {
         console.log(key)
         this.videoPath = `https://www.youtube.com/watch?v=${key}`
         console.log(this.videoPath)
+        window.open(this.videoPath)
       })
 
       // .then(details => {
