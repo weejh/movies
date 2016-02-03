@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var bundler = require('aurelia-bundler');
+var bundle = require('aurelia-bundler').bundle;
 
 var config = {
   force: true,
@@ -7,10 +7,7 @@ var config = {
   bundles: {
     "dist/app-build": {
       includes: [
-        '*',
-        '*.html!text',
-        '*.css!text',
-        'bootstrap/css/bootstrap.css!text'
+        '*'
       ],
       options: {
         inject: true,
@@ -34,14 +31,16 @@ var config = {
         inject: true,
         minify: true
       }
+    },
+    "dist/view-bundle": {
+      htmlimport: true,
+      includes: 'dist/*.html',
+      options: {
+        inject: {
+          indexFile : 'index.html',
+          destFile : 'dest_index.html',
+        }
+      }
     }
   }
 };
-
-gulp.task('bundle', function() {
- return bundler.bundle(config);
-});
-
-gulp.task('unbundle', function() {
- return bundler.unbundle(config);
-});

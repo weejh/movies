@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-size: 15px;
+}
+
 .splash {
   text-align: center;
   margin: 10% 0 0 0;
@@ -129,6 +133,37 @@ p.name {
   justify-content: center;
 }
 
+#profile-picture {
+  height: 350px;
+  width: 350px;
+  border-radius: 50px
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px
+}
+
+.demo-card-wide.mdl-card {
+  width: 380px;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 330px;
+}
+
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px
+}
 /* animation definitions */
 @-webkit-keyframes fadeInRight {
   0% {
