@@ -212,12 +212,10 @@ System.config({
     }
   },
   bundles: {
-    "app-build-0c1cb32840.js": [
+    "app-build-3b4f62fce2.js": [
       "app.html!github:systemjs/plugin-text@0.0.3.js",
       "app.js",
       "blur-image.js",
-      "child-router.html!github:systemjs/plugin-text@0.0.3.js",
-      "child-router.js",
       "home.html!github:systemjs/plugin-text@0.0.3.js",
       "home.js",
       "login-status.js",
@@ -229,10 +227,6 @@ System.config({
       "nav-bar.html!github:systemjs/plugin-text@0.0.3.js",
       "popular-movies.html!github:systemjs/plugin-text@0.0.3.js",
       "popular-movies.js",
-      "users.html!github:systemjs/plugin-text@0.0.3.js",
-      "users.js",
-      "watchlist.html!github:systemjs/plugin-text@0.0.3.js",
-      "watchlist.js",
       "whoami.html!github:systemjs/plugin-text@0.0.3.js",
       "whoami.js"
     ],
@@ -348,16 +342,6 @@ System.config({
       "npm:aurelia-framework@1.0.0-beta.1.1.1.js",
       "npm:aurelia-fetch-client@1.0.0-beta.1.1.0.js",
       "github:github/fetch@0.10.1.js"
-    ],
-    "users.js": [
-      "npm:aurelia-framework@1.0.0-beta.1.1.1.js",
-      "npm:aurelia-fetch-client@1.0.0-beta.1.1.0.js",
-      "github:github/fetch@0.10.1.js"
-    ],
-    "watchlist.js": [
-      "aurelia-dependency-injection.js",
-      "jquery.js",
-      "npm:aurelia-event-aggregator@1.0.0-beta.1.1.0.js"
     ],
     "whoami.js": [
       "npm:aurelia-fetch-client@1.0.0-beta.1.1.0.js",
