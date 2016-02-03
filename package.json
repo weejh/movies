@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "postinstall": "jspm install -y && jspm update",
+    "postinstall": "jspm install -y && jspm update && jspm dl-loader --latest",
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e"
   },
