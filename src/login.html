@@ -66,6 +66,14 @@
     border-radius: 5px;
   }
 
+  .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
   </style>
 
   <html lang="en">
@@ -126,15 +134,14 @@
             <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
               <div class="demo-crumbs mdl-color-text--grey-500">
                 <!-- Google &gt; Material Design Lite &gt; How to install MDL -->
-                ${daTe}
+
               </div>
-              <h3>Welcome ...</h3>
-              <p>
-                Intro ...
-              </p>
-              <p>
-                Thank you note ...
-              </p>
+              <div class="text">
+                <h1>The Movie Diary</h1>
+                <p>Take note of all the upcoming movies and add them to your wishlist</p>
+                <p>Log in to check out all the features!</p>
+                <a click.delegate="login()" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Log In</a>
+              </div>
             </div>
           </div>
           <!-- <footer class="demo-footer mdl-mini-footer">
@@ -148,7 +155,7 @@
           </footer> -->
         </main>
       </div>
-      <a click.delegate="login()" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">click to start</a>
+
       <!-- <script src="https://code.getmdl.io/1.1.0/material.min.js"></script> -->
     </body>
   </html>
