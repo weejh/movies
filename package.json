@@ -19,8 +19,8 @@
     "url": "http://github.com/aurelia/skeleton-navigation"
   },
   "scripts": {
-    "start": "npm run build && start-server",
-    "start-server": "gulp serve & gulp bundle",
+    "start": "start-server",
+    "start-server": "npm run build && gulp serve & gulp bundle",
     "postinstall": "jspm install -y && jspm update",
     "build": "npm run build-package",
     "build-package": "npm install && npm install gulp jspm && npm update",
