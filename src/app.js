@@ -4,7 +4,7 @@ import {loginStat} from 'login-status'
 export class App {
   configureRouter(config, router) {
     // config.addPipelineStep('authorize', AuthorizeStep);
-    config.title = 'Movie Diary';
+    config.title = 'The Movie Diary';
     config.map([
       { route: ['', 'home'],
         name: 'home',

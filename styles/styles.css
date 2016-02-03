@@ -130,8 +130,8 @@ p.name {
 }
 
 #profile-picture {
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   border-radius: 50px
 }
 
@@ -140,6 +140,25 @@ p.name {
   flex-direction: column;
   align-items: center;
   margin-top: 30px
+}
+
+.demo-card-wide.mdl-card {
+  width: 380px;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 380px;
+}
+
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px
 }
 /* animation definitions */
 @-webkit-keyframes fadeInRight {
