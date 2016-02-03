@@ -1,23 +1,23 @@
 var gulp = require('gulp');
-var bundle = require('aurelia-bundler').bundle;
+var bundler = require('aurelia-bundler');
 
 var config = {
   force: true,
-  baseURL: '.',                   // baseURL of the application
-  configPath: './config.js',      // config.js file. Must be within `baseURL`
+  packagePath: '.',
   bundles: {
-    "dist/app-build": {           // bundle name/path. Must be within `baseURL`. Final path is: `baseURL/dist/app-build.js`.
+    "dist/app-build": {
       includes: [
-        '[*.js]',
+        '*',
         '*.html!text',
         '*.css!text',
+        'bootstrap/css/bootstrap.css!text'
       ],
       options: {
         inject: true,
         minify: true
       }
     },
-    "dist/vendor-build": {
+    "dist/aurelia": {
       includes: [
         'aurelia-bootstrapper',
         'aurelia-fetch-client',
@@ -28,8 +28,7 @@ var config = {
         'github:aurelia/templating-router',
         'github:aurelia/loader-default',
         'github:aurelia/history-browser',
-        'github:aurelia/logging-console',
-        'bootstrap/css/bootstrap.css!text'
+        'github:aurelia/logging-console'
       ],
       options: {
         inject: true,
@@ -40,5 +39,9 @@ var config = {
 };
 
 gulp.task('bundle', function() {
-  return bundle(config);
+ return bundler.bundle(config);
+});
+
+gulp.task('unbundle', function() {
+ return bundler.unbundle(config);
 });
