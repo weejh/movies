@@ -10,7 +10,7 @@ exports.config = {
   }],
 
   //seleniumAddress: 'http://0.0.0.0:4444',
-  specs: ['./helpers.e2e.js', 'test/e2e/dist/*.js'],
+  specs: ['test/e2e/dist/helpers.e2e.js', 'test/e2e/dist/*.js'],
 
   baseUrl: 'http://localhost:9000/#/',
 
