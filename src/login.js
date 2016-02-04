@@ -17,7 +17,6 @@ export class Login {
     window.localStorage.clear();
     window.sessionStorage.clear()
 
-
     this.login = () => {
       this.lock.show((err, profile, token) => {
 
