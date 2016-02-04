@@ -11,8 +11,4 @@ export class PageObjectLogin {
   getContent() {
     return element(by.tagName('p')).getText();
   }
-
-  pressLoginButton() {
-    return element(by.id('login')).click();
-  }
 }

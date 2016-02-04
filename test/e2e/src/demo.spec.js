@@ -1,18 +1,18 @@
 // import {PageObjectWelcome} from './welcome.po.js'
 // import {PageObjectSkeleton} from './skeleton.po.js'
-import {PageObjectHome} from './home.po.js'
+// import {PageObjectHome} from './home.po.js'
 import {PageObjectLogin} from './login.po.js'
 
 describe('login page and home page', function() {
   // let poWelcome;
   // let poSkeleton;
-  let poHome
+  // let poHome
   let poLogin
 
   beforeEach(() => {
     // poSkeleton = new PageObjectSkeleton();
     // poWelcome = new PageObjectWelcome();
-    poHome = new PageObjectHome();
+    // poHome = new PageObjectHome();
     poLogin = new PageObjectLogin()
 
     browser.loadAndWaitForAureliaPage('http://localhost:9000');
@@ -30,9 +30,10 @@ describe('login page and home page', function() {
     expect(poLogin.getContent()).toBe('Take note of all the upcoming movies and add them to your wishlist.\nLog in to check out all the features!')
   })
 
-  it('should display header from home page', () => {
-    expect(poHome.getHeader()).toBe('Home')
-  })
+
+  // it('should display header from home page', () => {
+  //   expect(poHome.getHeader()).toBe('Home')
+  // })
   // it('should automatically write down the fullname', () => {
   //   poWelcome.setFirstname('Rob');
   //   poWelcome.setLastname('Eisenberg');
@@ -51,20 +52,4 @@ describe('login page and home page', function() {
   //   poSkeleton.navigateTo('#/users');
   //   expect(poSkeleton.getCurrentPageTitle()).toBe('Github Users | Aurelia');
   // });
-})
-
-describe('aurelia skeleton app', function() {
-  // let poWelcome;
-  // let poSkeleton;
-  let poHome
-  let poLogin
-
-  beforeEach(() => {
-    // poSkeleton = new PageObjectSkeleton();
-    // poWelcome = new PageObjectWelcome();
-    poHome = new PageObjectHome();
-    poLogin = new PageObjectLogin()
-
-    browser.loadAndWaitForAureliaPage('http://localhost:9000');
-  });
 })

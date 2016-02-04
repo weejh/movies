@@ -3,12 +3,16 @@ exports.config = {
   directConnect: true,
 
   // Capabilities to be passed to the webdriver instance.
-  capabilities: {
+  multiCapabilities: [{
     'browserName': 'chrome'
-  },
+  }, {
+    'browserName': 'firefox'
+  }],
 
   //seleniumAddress: 'http://0.0.0.0:4444',
-  specs: ['test/e2e/dist/*.js'],
+  specs: ['./helpers.e2e.js', 'test/e2e/dist/*.js'],
+
+  baseUrl: 'http://localhost:9000/#/',
 
   plugins: [{
     path: 'aurelia.protractor.js'
