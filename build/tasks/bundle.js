@@ -7,39 +7,30 @@ var config = {
   bundles: {
     "dist/app-build": {
       includes: [
-        '*'
-      ],
-      options: {
-        inject: true,
-        minify: true
-      }
-    },
-    "dist/aurelia": {
-      includes: [
+        '**/*.css!text',
+        '**/*.html!text',
+        '**/*.js',
         'aurelia-bootstrapper',
+        'aurelia-dependency-injection',
+        'aurelia-framework',
+        'aurelia-templating-binding',
+        'aurelia-templating-resources',
+        'aurelia-loader-default',
         'aurelia-fetch-client',
         'aurelia-router',
-        'aurelia-animator-css',
-        'github:aurelia/templating-binding',
-        'github:aurelia/templating-resources',
-        'github:aurelia/templating-router',
-        'github:aurelia/loader-default',
-        'github:aurelia/history-browser',
-        'github:aurelia/logging-console'
+        'aurelia-templating-router',
+        'aurelia-history-browser',
+        'aurelia-logging-console',
+        'aurelia-event-aggregator',
+        'bootstrap',
+        'moment'
+      ],
+      excludes: [
+        'config.js'
       ],
       options: {
         inject: true,
         minify: true
-      }
-    },
-    "dist/view-bundle": {
-      htmlimport: true,
-      includes: 'dist/*.html',
-      options: {
-        inject: {
-          indexFile : 'index.html',
-          destFile : 'dest_index.html',
-        }
       }
     }
   }
