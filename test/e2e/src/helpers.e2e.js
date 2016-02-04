@@ -38,8 +38,9 @@ var helpers = function helpers(){
 
     this.logout = function(){
         browser.driver.get(browser.baseUrl);
-        browser.executeScript('window.localStorage.clear();');
-    }
+        browser.executeScript('window.sessionStorage.clear()')
+        browser.executeScript('window.localStorage.clear()')
+      }
 };
 
 module.exports = new helpers();

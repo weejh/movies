@@ -15,9 +15,12 @@ export class Login {
     // console.log('login.js');
 
     window.localStorage.clear();
+    window.sessionStorage.clear()
+
 
     this.login = () => {
       this.lock.show((err, profile, token) => {
+
         if(err) {
           console.log(err);
         }
