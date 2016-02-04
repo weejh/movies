@@ -14,6 +14,4 @@ export function configure(aurelia) {
 
   aurelia.start().then(a => a.setRoot('login'));
   // aurelia.start().then(a => a.setRoot());
-
-
 }
