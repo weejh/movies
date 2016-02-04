@@ -12,7 +12,7 @@ export class Home {
     // console.log('welcome =>  ' + loginStat());
     this.isAuthenticated = loginStat()
     console.log(JSON.parse(window.localStorage.getItem('profile')).picture);
-    // if (loginStat()) this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
+    if (loginStat()) this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
     loginStat() ? this.username = JSON.parse(window.localStorage.getItem('profile')).nickname
       : this.username = 'Lim KoPi'
     this.time = new Date(JSON.parse(window.localStorage.getItem('profile')).updated_at)
