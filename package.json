@@ -21,7 +21,7 @@
   "scripts": {
     "start": "gulp serve",
     "postinstall": "jspm install -y && jspm update",
-    "test": "gulp test",
+    "test": "gulp run e2e",
     "e2e": "gulp serve webdriver-standalone e2e"
   },
   "dependencies": {
